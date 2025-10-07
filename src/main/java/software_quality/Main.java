@@ -109,7 +109,7 @@ public class Main {
 
         // Весовые коэффициенты метрик
         double[] metrics = {finalMetricValue, finalMetricValues};
-        double[] metricWeights = {1.0, 1.0};
+        double[] metricWeights = {0.5, 0.5};
 
         var absoluteIndicator = EstimatingMetrics.getAbsoluteMetricValue(metrics, metricWeights);
         System.out.println("P_ij = " + absoluteIndicator);
